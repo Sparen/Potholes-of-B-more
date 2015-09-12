@@ -1,5 +1,14 @@
 function generateImage(){
-    var oImg = document.createElement('img');
+    var myLatlng = new google.maps.LatLng(39.325993, -76.617613);
+    var mapOptions = {
+        zoom: 12,
+        center: myLatlng,
+        mapTypeId: google.maps.MapTypeId.TERRAIN
+    };
+
+    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+    /*var oImg = document.createElement('img');
     var src = "https://maps.googleapis.com/maps/api/staticmap?center=3100+N+Charles+Street,Baltimore,MD&zoom=12&scale=2&size=640x640&maptype=terrain";
     src = src.concat(loadMarkers_Driver(loadMarkers));
     //Append the API Key to src
@@ -8,7 +17,7 @@ function generateImage(){
     oImg.setAttribute('alt', 'na');
     oImg.setAttribute('height', '1280');
     oImg.setAttribute('width', '1280');
-    document.body.appendChild(oImg);
+    document.body.appendChild(oImg);*/
 }
 
 function loadMarkers_Driver(callback){
