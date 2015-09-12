@@ -77,7 +77,8 @@ function markerCreate(map, address, color, ID){
                 position: {lat: latitude, lng: longitude},
                 map: map,
                 animation: google.maps.Animation.DROP,
-                title: ID
+                title: ID,
+                label: ID
             });
             
         } else {
