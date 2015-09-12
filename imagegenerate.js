@@ -28,7 +28,7 @@ function loadMarkers_Driver(map, callback){
     client.open('POST', filepath, true);
     client.onreadystatechange = function() {
         if (client.readyState == 4) {
-            alert("Successfully loaded data");
+            alert("Successfully loaded data"); //USED PRIMARILY FOR TIMING
             //alert(client.responseText); //BAAAAAD
             var clientresponse = client.responseText;
             //alert("Type of response text: " + typeof clientresponse);
@@ -45,7 +45,7 @@ function loadMarkers(map){ //this refers to the clientresponse
     var color = "";
     var allEntries = this.split("\n");
     //for (i = 0; i < allEntries.length; i++) { //for every line
-    for (i = 0; i < 5; i++) {
+    for (i = 0; i < 10; i++) { //10 is max queries per second apparently?
         var split = allEntries[i].split(","); //array of data fields
         //servicerequestnum,code,codeDescription,address,city,state,zip,createdDate,statusDate,status,activity,outcome,updatedDate
         if(split[9]=="NEW" || split[9]=="OPEN") {
@@ -56,9 +56,10 @@ function loadMarkers(map){ //this refers to the clientresponse
         //Add latitude,longitude
         var address = split[3];
         //console.log(address); //these are correct
+        //window.setTimeout(markerCreate(map, address, color, i), 1200*i); //Alternative for below
         markerCreate(map, address, color, i);
     }
-    alert("Exiting loadMarkers");
+    //alert("Exiting loadMarkers");
 }
 
 function markerCreate(map, address, color, ID){
