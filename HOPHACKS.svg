@@ -1,0 +1,87 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="1152" height="256" version="1.1"
+     xmlns="http://www.w3.org/2000/svg">
+     <!-- Background -->
+     <rect width="1152" height="256"
+     	style="fill:White" />
+
+     <!-- Each letter is 64px wide and goes from 80 to 176 with 4 pixel tips -->
+     <path d="M 128 128 H 96 H 160" stroke="#0088FF" stroke-width="8" fill="none" />
+     <path d="M 96 128 V 76 V 180" stroke="#0088FF" stroke-width="8" fill="none" />
+     <path d="M 160 128 V 76 V 180" stroke="#0088FF" stroke-width="8" fill="none" />
+
+     <ellipse cx="256" cy="128" ry="48" rx="32" stroke="#0088FF" stroke-width="8" fill="white" />
+
+     <path d="M 384 128 M 352 128 V 76 V 180" stroke="#0088FF" stroke-width="8" fill="white" />
+     <path d="M 392 128 A 24 24 0 0 0 392 80" stroke="#0088FF" stroke-width="8" fill="none" />
+     <path d="M 352 80 H 392 M 352 128 H 392" stroke="#0088FF" stroke-width="8" fill="none" />
+
+     <path d="M 512 128 H 480 H 544" stroke="#0088FF" stroke-width="8" fill="none" />
+     <path d="M 480 128 V 76 V 180" stroke="#0088FF" stroke-width="8" fill="none" />
+     <path d="M 544 128 V 76 V 180" stroke="#0088FF" stroke-width="8" fill="none" />
+
+     <path d="M 608 176 L 632 80 H 648 L 672 176" stroke="#0088FF" stroke-width="8" fill="none" />
+     <path d="M 620 128 H 660" stroke="#0088FF" stroke-width="8" fill="none" />
+
+     <ellipse cx="768" cy="128" ry="48" rx="32" stroke="#0088FF" stroke-width="8" fill="white" />
+     <path d="M 768 128 H 800 A 64 64 1 0 0 792 96 M 800 128 A 64 64 1 0 1 792 160" stroke="white" stroke-width="9" fill="none" />
+
+     <path d="M 864 76 V 180" stroke="#0088FF" stroke-width="8" fill="none" />
+     <path d="M 864 128 L 912 80" stroke="#0088FF" stroke-width="8" fill="none" />
+     <path d="M 864 128 L 928 176" stroke="#0088FF" stroke-width="8" fill="none" />
+
+     <path d="M 1024 128 H 1040 A 32 32 1 0 1 1040 176 H 1000" stroke="#0088FF" stroke-width="8" fill="none" />
+     <path d="M 1024 128 H 1008 A 32 32 1 0 1 1008 80 H 1048" stroke="#0088FF" stroke-width="8" fill="none" />
+
+     <!-- Stations -->
+
+     <circle cx="96" cy="128" r="6" stroke="#0088FF" stroke-width="1" fill="white" />
+     <circle cx="160" cy="128" r="6" stroke="#0088FF" stroke-width="1" fill="white" />
+     <circle cx="96" cy="80" r="6" stroke="#0088FF" stroke-width="1" fill="white" />
+     <circle cx="160" cy="80" r="6" stroke="#0088FF" stroke-width="1" fill="white" />
+     <circle cx="96" cy="176" r="6" stroke="#0088FF" stroke-width="1" fill="white" />
+     <circle cx="160" cy="176" r="6" stroke="#0088FF" stroke-width="1" fill="white" />
+
+     <circle cx="256" cy="80" r="6" stroke="#0088FF" stroke-width="1" fill="white" />
+     <circle cx="256" cy="176" r="6" stroke="#0088FF" stroke-width="1" fill="white" />
+     <circle cx="224" cy="128" r="6" stroke="#0088FF" stroke-width="1" fill="white" />
+     <circle cx="288" cy="128" r="6" stroke="#0088FF" stroke-width="1" fill="white" />
+
+     <circle cx="352" cy="128" r="6" stroke="#0088FF" stroke-width="1" fill="white" />
+     <circle cx="352" cy="80" r="6" stroke="#0088FF" stroke-width="1" fill="white" />
+     <circle cx="352" cy="176" r="6" stroke="#0088FF" stroke-width="1" fill="white" />
+     <circle cx="416" cy="104" r="6" stroke="#0088FF" stroke-width="1" fill="white" />
+
+     <circle cx="480" cy="128" r="6" stroke="#0088FF" stroke-width="1" fill="white" />
+     <circle cx="544" cy="128" r="6" stroke="#0088FF" stroke-width="1" fill="white" />
+     <circle cx="480" cy="80" r="6" stroke="#0088FF" stroke-width="1" fill="white" />
+     <circle cx="544" cy="80" r="6" stroke="#0088FF" stroke-width="1" fill="white" />
+     <circle cx="480" cy="176" r="6" stroke="#0088FF" stroke-width="1" fill="white" />
+     <circle cx="544" cy="176" r="6" stroke="#0088FF" stroke-width="1" fill="white" />
+
+     <circle cx="608" cy="176" r="6" stroke="#0088FF" stroke-width="1" fill="white" />
+     <circle cx="640" cy="80" r="6" stroke="#0088FF" stroke-width="1" fill="white" />
+     <circle cx="672" cy="176" r="6" stroke="#0088FF" stroke-width="1" fill="white" />
+     <circle cx="620" cy="128" r="6" stroke="#0088FF" stroke-width="1" fill="white" />
+     <circle cx="660" cy="128" r="6" stroke="#0088FF" stroke-width="1" fill="white" />
+
+     <circle cx="792" cy="96" r="6" stroke="#0088FF" stroke-width="1" fill="white" />
+     <circle cx="736" cy="128" r="6" stroke="#0088FF" stroke-width="1" fill="white" />
+     <circle cx="792" cy="160" r="6" stroke="#0088FF" stroke-width="1" fill="white" />
+
+     <circle cx="864" cy="80" r="6" stroke="#0088FF" stroke-width="1" fill="white" />
+     <circle cx="864" cy="128" r="6" stroke="#0088FF" stroke-width="1" fill="white" />
+     <circle cx="864" cy="176" r="6" stroke="#0088FF" stroke-width="1" fill="white" />
+     <circle cx="912" cy="80" r="6" stroke="#0088FF" stroke-width="1" fill="white" />
+     <circle cx="928" cy="176" r="6" stroke="#0088FF" stroke-width="1" fill="white" />
+
+     <circle cx="1048" cy="80" r="6" stroke="#0088FF" stroke-width="1" fill="white" />
+     <circle cx="1040" cy="128" r="6" stroke="#0088FF" stroke-width="1" fill="white" />
+     <circle cx="1040" cy="176" r="6" stroke="#0088FF" stroke-width="1" fill="white" />
+     <circle cx="1008" cy="80" r="6" stroke="#0088FF" stroke-width="1" fill="white" />
+     <circle cx="1008" cy="128" r="6" stroke="#0088FF" stroke-width="1" fill="white" />
+     <circle cx="1000" cy="176" r="6" stroke="#0088FF" stroke-width="1" fill="white" />
+
+</svg>

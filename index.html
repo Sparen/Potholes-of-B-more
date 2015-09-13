@@ -8,14 +8,15 @@
     <meta name="keywords" content="">
     <meta name="viewport" content="initial-scale=1">
   </head>
-  <body>
-    <div>
+  <body style="font-family:andale mono">
+    <div style="text-align:center">
+      <img src="HOPHACKS.svg"><br><br>
       <h1>Baltimore Potholes</h1>
       <button type="button" onclick="generateImage()">Click to view map</button>
-      <div id="map" style="height: 768px; width: 768px;"></div>
 
 	<script type="text/javascript" src="http://maps.google.com/maps/api/js?key= AIzaSyDgLXdj8luOqkLNnUw7WxBgkBphAPD8JbE"></script>
         <script language="JavaScript" type="text/javascript" src="imagegenerate.js"></script>
     </div>
+    <div id="map" style="height: 768px; width: 768px; margin: 0 auto; max-width: 768px;"></div>
   </body>
 </html>
