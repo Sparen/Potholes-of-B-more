@@ -22,7 +22,8 @@ function loadMarkers_Driver(map, callback){
         alert("File APIs are not fully supported.");
         return "";
     }
-    var filepath = "City_potholes.csv";
+    var filepath = "City_potholes.csv"; //static
+    //var filepath = "https://data.baltimorecity.gov/resource/uds6-qsb6.csv"; //live. May bring 406 error
 
     var client = new XMLHttpRequest();
     client.open('POST', filepath, true);
@@ -84,7 +85,6 @@ function markerCreate(map, address, color, ID){
         } else {
             //alert("Geocoder status bad - " + status); //OVER QUERY LIMIT
             console.log("Geocoder status bad - " + status); //OVER QUERY LIMIT
-            callback(0, 0);
         }
     }); 
 }
