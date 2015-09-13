@@ -69,6 +69,7 @@ function timedCreation(map, address, color, ID){
 
 function markerCreate(map, address, color, ID){
     var geocoder = new google.maps.Geocoder();
+    var idtostr = ID.toString();
     geocoder.geocode( { 'address': address }, function(results, status) {
         if (status == google.maps.GeocoderStatus.OK) {
             var latitude = results[0].geometry.location.lat();
@@ -78,8 +79,7 @@ function markerCreate(map, address, color, ID){
                 position: {lat: latitude, lng: longitude},
                 map: map,
                 animation: google.maps.Animation.DROP,
-                title: ID,
-                label: ID
+                title: idtostr,
             });
             
         } else {
