@@ -22,11 +22,11 @@ function loadMarkers_Driver(map, callback){
         alert("File APIs are not fully supported.");
         return "";
     }
-    var filepath = "City_potholes.csv"; //static
-    //var filepath = "https://data.baltimorecity.gov/resource/uds6-qsb6.csv"; //live. May bring 406 error
+    //var filepath = "City_potholes.csv"; //static
+    var filepath = "https://data.baltimorecity.gov/resource/uds6-qsb6.csv"; //live. May bring 406 error if using POST instead of GET
 
     var client = new XMLHttpRequest();
-    client.open('POST', filepath, true);
+    client.open('GET', filepath, true);
     client.onreadystatechange = function() {
         if (client.readyState == 4) {
             //alert("Successfully loaded data"); //USED PRIMARILY FOR TIMING
